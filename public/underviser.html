@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Underviser side</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="shellScript.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <div id="forlæser">
+      <div id="LogInModul">
+
+    <button id="åbenLogIn" type='submit'>Log In her</button>
+    <div id="logInFeedback"></div>
+    <div id="logInOutput"></div>
+  </div>
+</div>
+
+    <h1>Velkommen forelæser</h1>
+<div id="content" style="display:none";>
+
+    <div class="row">
+
+      <div class="column">
+        <h2> Anonyme Spørgsmål fra Elever </h2>
+        <div id="anonymeSpørgsmål">
+<!--- HER INDSÆTTES SPØRGSMÅL! FÅ fat i id og lav innerHTML!!-->
+          </div>
+          </div>
+
+    <div class="column">
+      <h2>Start slideshow</h2>
+      <div id="slideshowSTART">
+        <h2> Dagens Slideshow </h2>
+      <iframe id="slideshowID" src=" " width="600px" height="500px" frameborder="5px"></iframe>
+    <div id="slideinfo">
+    <input id="slidelink" type="text"  placeholder="Indsæt dagens link her">
+    <button id="slideOn" type="submit"> Start Slideshow </button>
+  </div>
+    </div>
+    </div>
+
+    <div class="column">
+      <h2>Start lektionen</h2>
+      <p> Feature kommer snart </p>
+      </div>
+
+      </div>
+    </div>
+
+    <script src="underviser.js"></script>
+    <script src="professorLogin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Studerende Interface til Forelæsning</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <script src="shellScript.js"></script>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="lektion"> Forelæsning:  </br><span id="forelæsningtal"></span></br> Dags dato: <span id="dato"><span></h1>
+
+      <div class="row">
+
+        <div class="column">
+          <div id="questionTilUnderviser">
+          <h2>Stil et anonymt spørgsmål til Underviser</h2>
+          <div>
+          <input id="anon" type="text" placeholder="Stil anonymt spørgsmål">
+          <button id="anonymKnap" type="submit"> Stil et anonymt spørgsmål til underviseren</button>
+        </div>
+        <div><p><strong></br></br>Du har stilt følgende spørgsmål i dagens lektion: </strong></p>
+          <div id="anonno"></div>
+        </div>
+      </div>
+    </div>
+
+        <div class="column">
+          <div id="chat">
+            <h2> Studerendes Chat </h2>
+            <div id="chat-vindue">
+            <div id="output"></div>
+            <div id="feedback"></div>
+            </div>
+            <input id="navn" type="text" placeholder="">
+            <span id="brugernavn"></span>
+            <input id="besked" type="text" placeholder="Besked">
+            <button id="send" type="submit">Send</button>
+          </div>
+        </div>
+
+        <div class="column">
+          <div id="slideshow">
+            <h2> Dagens Slideshow </h2>
+          <iframe id="slideshowID" src="" width="600px" height="500px" frameborder="5px"></iframe>
+        <p id="outputSlide" value="">
+      </p>
+        </div>
+        </div>
+
+      </div>
+
+        <script src="studerende.js"></script>
+        <script src="dato.js"></script>
+  </body>
+</html>

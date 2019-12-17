@@ -1,0 +1,148 @@
+body{
+    font-family: 'Arial';
+}
+
+h1 {
+  border: 5px;
+  border-color: blue;
+  margin: 5px;
+
+}
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: ##2F4860;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 550px;
+  margin: 0 auto;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#slideshow {
+  float: right;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin: auto;
+
+}
+
+
+#lektion {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 10px 1% 1% 10px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+#chat{
+    height: 550px;
+    width: 550px;
+    max-width: 600px;
+    padding-top: 10px;
+    margin: auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+#chat h2 {
+  text-align: center;
+}
+
+#chat-vindue{
+    height: 500px;
+    overflow: auto;
+    background: #f9f9f9;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #2F4860;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+button{
+    background: #2F4860;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
+
+
+#questionTilUnderviser {
+  height: auto;
+  width: 550px
+  max-width: 600px;
+  padding-top: 10px;
+  margin: auto;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+}
+
+input #anon {
+  height: 10%;
+  border: 4px 4px 4px 4px;
+  border-color: #2F4860;
+}
+
+#logInForm {
+  height: 550px;
+  width: 500px;
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
