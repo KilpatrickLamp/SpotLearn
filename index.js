@@ -25,9 +25,16 @@ function reply(request, response) {
 }
 
 let app = express();
-let server = app.listen(80, function() {
-  console.log("Server running on port 80");
+
+//SERVERENS PORT
+const port = process.env.PORT || 80
+const server = app.listen(port, function() {
+  console.log("Server is up and running on port 80");
 });
+
+/*let server = app.listen(80, function() {
+  console.log("Server running on port 80");
+});*/
 
 //Static files to use in the public folder
 app.use(express.static('public'));
