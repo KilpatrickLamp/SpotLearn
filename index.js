@@ -24,10 +24,15 @@ function reply(request, response) {
         })
 }
 
-let app = express();
-let server = app.listen(80, function() {
+const bodyParser = require('body-parser');
+const app = express();
+
+//SERVERENS PORT
+const port = process.env.PORT || 80
+const server = app.listen(port, function() {
   console.log("Server is up and running on port 80");
 });
+
 
 /*let server = app.listen(80, function() {
   console.log("Server running on port 80");
