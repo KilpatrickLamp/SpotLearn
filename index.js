@@ -25,10 +25,7 @@ function reply(request, response) {
 }
 
 let app = express();
-
-//SERVERENS PORT
-const port = process.env.PORT || 80
-const server = app.listen(port, function() {
+let server = app.listen(80, function() {
   console.log("Server is up and running on port 80");
 });
 
