@@ -1,5 +1,5 @@
 //Hvor vi definerer socket for client sider.
-let socket = io.connect("http://localhost:80");
+let socket = io.connect("http://spotlearn.herokuapp.com:80");
 
 // Check efter WIFI connection change og reload siden.
 var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
